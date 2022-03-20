@@ -1,5 +1,17 @@
 #### Data Structure Foundation Knowledge
 
+##### Contents Tree
+
+├── README.md
+├── include
+│   ├── leetcode.h
+│   └── link_list.h
+├── src
+│   ├── link_list.cpp
+│   └── main.cpp
+└── leetcode
+    └── josephus_ring.cpp
+
 ##### Link List
 
 * **structure**
@@ -41,3 +53,15 @@
   // Clear link list
   bool ClearLinkList(Node_t head);
   ```
+
+
+
+* **LeetCode**
+
+  * Josephus ring problem using circulate link list 
+
+  * ```c++
+    int JosephusRing(int n, int m);
+    ```
+
+  * 剑指Offer 62. 圆圈中最后剩下的数字，使用循环链表模拟实现，ac过不了，因为超时了。。

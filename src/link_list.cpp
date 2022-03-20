@@ -1,24 +1,6 @@
 #include <iostream>
 #include "../include/link_list.h"
 
-
-int main()
-{
-    std::vector<int> data {1, 2, 3, 4, 5, 6, 7};
-    int length = data.size();
-
-    std::cout << "list length => " << length << std::endl; 
-
-    Node_t head = new Node;
-    head->next = TailInsertCreateLinkList(data, length);
-
-    DisplayLinkList(head);
-    std::cout << "clear node link list\n";
-    ClearLinkList(head);
-    DisplayLinkList(head);
-    return 0;
-}
-
 // 头插法创建一个链表
 Node_t HeadInsertCreateLinkList(vector<int> data, int length)
 {

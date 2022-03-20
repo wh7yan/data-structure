@@ -6,8 +6,8 @@
 
 using namespace std;
 
-// link list node
-typedef struct Node
+// single link list node
+typedef struct  Node
 {
     int data;
     struct Node *next;
