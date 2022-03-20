@@ -2,7 +2,7 @@
 
 int main()
 {
-    int ans = JosephusRing(34, 3);
+    int ans = JosephusRingByArray(32, 5);
     cout << ans << endl;
     return 0;
 }
