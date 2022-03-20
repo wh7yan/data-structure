@@ -2,23 +2,18 @@
 
 ##### Contents Tree
 
+```C++
+.
 ├── README.md
-
 ├── include
-
-│   ├── leetcode.h
-
-│   └── link_list.h
-
-├── src
-
-│   ├── link_list.cpp
-
-│   └── main.cpp
-
-└── leetcode
-
-    └── josephus_ring.cpp
+│   ├── leetcode.h
+│   └── link_list.h
+├── leetcode
+│   └── josephus_ring.cpp
+└── src
+    ├── link_list.cpp
+    └── main.cpp
+```
 
 ##### Link List
 
