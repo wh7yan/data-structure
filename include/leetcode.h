@@ -4,3 +4,5 @@
 int JosephusRing(int n, int m);
 // using array imitate ring
 int JosephusRingByArray(int n, int m);
+// using anthor array way imitate ring
+int JosephusRingByAnthorArray(int n, int m);

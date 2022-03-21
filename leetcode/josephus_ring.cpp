@@ -92,3 +92,38 @@ int JosephusRingByArray(int n, int m)
     }
     return ans;
 }
+
+// using anthor way by array
+int JosephusRingByAnthorArray(int n, int m)
+{
+    vector<int> ring_array;
+    for(int i = 0; i < n-1; i++)
+        ring_array.push_back(i+1);
+    
+    // circulate linked list by array
+    // 每一个value代表了下一个节点的位置，形成一个循环
+    ring_array.push_back(0); 
+
+    int position = 0;
+    int prior = n-1;
+    int count = 1;
+    int length = n;
+
+    while(length > 1)
+    {
+        if(count == m)
+        {
+            ring_array[prior] = ring_array[position];
+            ring_array[position] = -1;
+            position = ring_array[prior];
+            count = 1;
+            length--;
+        }else
+        {
+            prior = position;
+            position = ring_array[position];
+            count++;
+        }
+    }
+    return position;
+}
