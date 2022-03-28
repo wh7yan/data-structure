@@ -127,3 +127,14 @@ int JosephusRingByAnthorArray(int n, int m)
     }
     return position;
 }
+
+// using math ans
+int JosephusRingByMath(int n, int m)
+{
+    int position = 0;
+    for(int i = 2; i <= n; i++)
+    {
+        position = (position + m) % i;
+    }
+    return position;
+}

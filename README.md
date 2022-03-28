@@ -66,6 +66,6 @@
     int JosephusRing(int n, int m);
     int JosephusRingByArray(int n, int m);
     int JosephusRingByAnthorArray(int, int m);
+    int JosephusRingByMath(int n, int m);
     ```
 
-  * 剑指Offer 62. 圆圈中最后剩下的数字，使用循环链表和数组模拟实现，ac过不了，因为超时了。。
