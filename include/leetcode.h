@@ -8,6 +8,7 @@ int JosephusRingByArray(int n, int m);
 int JosephusRingByAnthorArray(int n, int m);
 
 
+vector<int> TwoSum(vector<int> &nums, int target);
 // using double point 
 vector<int> TwoSumByDoublePoint(vector<int> &nums, int target);
 // using hash map 

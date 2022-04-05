@@ -73,7 +73,9 @@
      * Two Sum problem using double pionts 
   
      * ```c++
+       vector<int> TwoSum(vector<int> &nums, int target);
        vector<int> TwoSumByDoublePoint(vector<int> &nums, int target);
+       vcetor<int> TwoSumByHashMap(vector<int> &nums, int target);
        ```
   
        

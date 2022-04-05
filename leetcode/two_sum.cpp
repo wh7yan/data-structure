@@ -2,6 +2,33 @@
 #include <algorithm>
 #include <unordered_map>
 
+vector<int> TwoSum(vector<int> &nums, int target)
+{
+    // two loop
+    int length = nums.size();
+
+    int sum = 0;
+    for(int i = 0; i < length; i++)
+    {
+        for(int j = 0; j < length; j++)
+        {
+            if(i != j)
+            {
+                if(nums[i]+nums[j] == target)
+                {
+                    vector<int> ans {i, j};
+                    return ans;
+                }                
+                    
+                    
+            }
+        }
+    }
+
+    vector<int> ans{0};
+    return ans;
+}
+
 
 vector<int> TwoSumByDoublePoint(vector<int> &nums, int target)
 {
