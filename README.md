@@ -9,10 +9,11 @@
 │   ├── leetcode.h
 │   └── link_list.h
 ├── leetcode
-│   └── josephus_ring.cpp
+│   ├── josephus_ring.cpp
+│   └── two_sum.cpp
 └── src
     ├── link_list.cpp
-    └── main.cpp
+    ├── main.cpp
 ```
 
 ##### Link List
@@ -66,6 +67,13 @@
     int JosephusRing(int n, int m);
     int JosephusRingByArray(int n, int m);
     int JosephusRingByAnthorArray(int, int m);
-    int JosephusRingByMath(int n, int m);
+    int JosephusRingByMath(int n, int m)；
     ```
-
+  
+     * Two Sum problem using double pionts 
+  
+     * ```c++
+       vector<int> TwoSumByDoublePoint(vector<int> &nums, int target);
+       ```
+  
+       
