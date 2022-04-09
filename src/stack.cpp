@@ -20,11 +20,9 @@ void Stack::Push(char ch)
 {
     if(!Stack::Full())
     {
-        top_++;
-        data_[top_] = ch;
-    }else
-    {
-        std::cout << "stack is full" << std::endl;
+        // top_++;
+        // data_[top_] = ch;
+        data_[++top_] = ch;
     }
 }
 
@@ -34,12 +32,9 @@ char Stack::Pop()
     char ret;
     if(!Stack::Empty())
     {
-        ret = data_[top_];
-        top_--;
-    }else
-    {
-        std::cout << "stack is empty" << std::endl;
-        ret = -1;
+        // ret = data_[top_];
+        // top_--;
+        ret = data_[top_--];
     }
     return ret;
 }
@@ -65,7 +60,7 @@ bool Stack::Empty()
 // stack is full
 bool Stack::Full()
 {
-    if(top_ == size_)
+    if(top_ + 1 == size_)
     {
         return true;
     }else

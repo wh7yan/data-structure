@@ -19,6 +19,10 @@ class Stack
         bool Full();
         void SetNull();
         void StackPrint();
+
+        class ExceptionEmpty{};
+        class ExceptionFull{};
+
 };
 
 #endif
