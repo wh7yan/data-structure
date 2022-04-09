@@ -7,19 +7,21 @@
 ├── README.md
 ├── include
 │   ├── leetcode.h
-│   └── link_list.h
+│   ├── link_list.h
+│   └── stack.h
 ├── leetcode
 │   ├── josephus_ring.cpp
 │   └── two_sum.cpp
 ├── src
 │   ├── link_list.cpp
-│   ├── main.cpp
+│   └── stack.cpp
 └── stl
+    ├── alter_string_lower_upper.cpp
     └── analysis_string.cpp
 ```
 
 ##### Link List
-* **structure**
+* **Structure**
 
   ```C++
   typedef struct Node
@@ -28,10 +30,6 @@
     struct Node *next;
   } Node, *Node_t;
   ```
-
-* **File**
-  1. header file => ./include/link_list.h
-  2. src file => ./src/link_list.cpp
 
 * **Function**
 
@@ -57,6 +55,31 @@
   
   // Clear link list
   bool ClearLinkList(Node_t head);
+  ```
+
+#### Stack
+
+* **Class**
+
+  ```C++
+  class Stack
+  {
+      private:
+          char *data_;  // linear list
+          int size_;    
+          int top_;   
+  
+      public:
+          Stack(int size = 10);
+          ~Stack();
+          void Push(char ch);
+          char Pop();
+          char Top();
+          bool Empty();
+          bool Full();
+          void SetNull();
+          void StackPrint();
+  };
   ```
 
 ##### LeetCode
